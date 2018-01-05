@@ -205,8 +205,13 @@ namespace pixi_spine {
                 let attachment = slot.attachment;
                 let slotContainer = this.slotContainers[i];
 
+                if (slot.forceVisible !== undefined) {
+                    slotContainer.visible = slot.forceVisible;
+                    continue;
+                }
+
                 if (!attachment) {
-                    slotContainer.visible = !!slot.forceVisible;
+                    slotContainer.visible = false;
                     continue;
                 }
 

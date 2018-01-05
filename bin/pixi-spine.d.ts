@@ -899,7 +899,7 @@ declare module PIXI.spine.core {
         blendMode: number;
         tempRegion: TextureRegion;
         tempAttachment: Attachment;
-        forceVisible: Boolean;
+        forceVisible: boolean;
         data: SlotData;
         bone: Bone;
         color: Color;

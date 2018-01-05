@@ -6823,8 +6823,12 @@ var pixi_spine;
                 var slot = slots[i];
                 var attachment = slot.attachment;
                 var slotContainer = this.slotContainers[i];
+                if (slot.forceVisible !== undefined) {
+                    slotContainer.visible = slot.forceVisible;
+                    continue;
+                }
                 if (!attachment) {
-                    slotContainer.visible = !!slot.forceVisible;
+                    slotContainer.visible = false;
                     continue;
                 }
                 var spriteColor = null;

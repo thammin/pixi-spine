@@ -47,7 +47,7 @@ namespace pixi_spine.core {
         tempRegion: TextureRegion;
         tempAttachment: Attachment;
         //force visible
-        forceVisible: Boolean;
+        forceVisible: boolean;
 
         //this is canon
         data: SlotData;
