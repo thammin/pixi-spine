@@ -46,6 +46,8 @@ namespace pixi_spine.core {
         //assign hack region a bit later
         tempRegion: TextureRegion;
         tempAttachment: Attachment;
+        //force visible
+        forceVisible: Boolean;
 
         //this is canon
         data: SlotData;

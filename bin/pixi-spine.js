@@ -6824,7 +6824,7 @@ var pixi_spine;
                 var attachment = slot.attachment;
                 var slotContainer = this.slotContainers[i];
                 if (!attachment) {
-                    slotContainer.visible = false;
+                    slotContainer.visible = !!slot.forceVisible;
                     continue;
                 }
                 var spriteColor = null;
